@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ecf0eb;
+    background-image: url('./pexels-rodnae-productions-5637624.jpg') ;
+   background-position: center center;
+   /* 背景图不平铺 */
+   background-repeat: no-repeat;
+   background-size: cover;
+    /* #59c880; */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+h1 {
+    margin: a;
+    font-size: rem;
+}
+h6{
+	font-size: 0.8rem;
+	line-height: 1rem;
+	font-weight: 100;
+	margin: 1rem 0;
+	letter-spacing: 0.1rem;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    margin: 1.2rem 0;
+    letter-spacing: 0.1rem;
+}
+span {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    margin: 1.2rem 0;
+}
+a {
+    color: #0c0c0f;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.from-text a{
+	color: #086de8;
+	font-size: 0.6rem;
+}
+/*登陆logo的css样式 */
+.login-form .text a{
+   color: #086de8;
+   font-size: 15px;
+}
+.logo{
+	width: 100%;
+	padding: 20px 0.1%; 
+	height:100px;
+	}
+.logo img{ 
+	height:100%;
+	}
+.logo-name {
+	text-align: left;
+	border-left:solid 5px #d33b3b;
+	padding-left: 30px;
+	margin-left:30px;
+	color: #ffffff;
+	line-height: 20px; 
+	display:inline-block; 
+	}
+    .english:hover{
+        color: #29ae08;
+        font-weight: 300;
+    }
+.chinese{
+	color: #e8e8ef;
+	font-size:30px;
+	}
+.english{
+	color: #e4ece4fe;
+	font-size:20px;
+    overflow: hidden;
+}
+/*   */
+/* 登陆提交按钮 */
+.login-form input[type=text],
+.login-form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3eeec;
+  font-size: 18px;
+  color: #222;
+}
+.container {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 40px 40px rgba(136, 212, 30, 0.728), 0 0 rgba(212, 196, 200, 0.84);
+    padding: 0.6rem;
+    width: 55rem;
+    height: 45rem;
+    max-width: 100vw;
+    min-height: 70vh;
+}
+.form-container form {
+    background: #f8f5f5;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.8rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.social-container {
+    margin: 0.6rem 0;
+}
+.social-container a {
+    border: 1px solid #0d0d0c;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    height: 2rem;
+    width: 2rem;
+}
+.social-container a:hover {
+    opacity: .8;
+}
+.form-container input {
+    width: 100%;
+    height: 2.2rem;
+    font-size: 20px;
+    text-indent: 1rem;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    margin: 0.6rem 0;
+}
+.form-container button:active {
+    transform: scale(0.9,0.9);
+}
+.form-container button {
+    padding: 0.4rem 1rem;
+    background: #e59225;
+    color: white;
+    border: 1px solid #ede0e0;
+    outline: none;
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 8px;
+    transition: all 100ms ease-in;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+button.ghost {
+    background: transparent;
+    border-color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    width: 5rem;
+    border-radius: 8px;
+    transition: all 100ms ease-in;
+    margin: 0.6rem 0;
+    padding: 0.5rem 0;
+    color: white;
+    font-size: 0.6rem;
+}
+button#send_code {
+    width: 100%;
+}
+button.ghost:active {
+    transform: scale(0.95,0.95);
+}
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.5s ease-in;
+}
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.overlay {
+    background-image: url('./pexels-rodnae-productions-5637771.jpg');
+    width: 200%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+    transition: all 1s ease-in-out;
+    color: rgb(233, 240, 238);
+}
+.overlay h1:hover{
+    color: #f68307;
+    transition: all 1.2s ease-in-out;
+}
+.overlay-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-out;
+    z-index: 99;
+}
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 2.2rem;
+}
+.overlay-right {
+    right: 0;
+}
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    transition: all 0.6s ease-in-out;
+}
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+    transition: all 0.6s ease-in-out;
+}

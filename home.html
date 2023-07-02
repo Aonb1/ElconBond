@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱康邦</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./homecss/style.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <div class="header">
+		<div class="header-f">
+		<!-- 网页头部-->
+		<div class="logo">
+		 <h1>&nbsp&nbsp爱康邦&nbspElconBond&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp您现在的位置是在:首页</h1>
+		</div>
+		<!-- 导航栏--> 
+		 <div class="nav">
+		   <!-- 一级菜单-->
+		         <ul>
+					<li> <a href="home.html">首页</a><div class="line-now"></div></li>
+		           <li>
+		             <a href="#">产品</a>
+		             <ul>
+		               <li><a href="products.html">智能硬件支持</a></li>
+		               <li><a href="https://www.icourse163.org/">智能养老</a></li>
+		               <li><a href="https://github.com/">软件公司用户总平台</a></li>
+		             </ul>
+		           </li>
+		           <li>
+		             <a href="#">价格</a>
+		             <ul>
+		               <li><a href="#">普通客户</a></li>
+		               <li><a href="#">定制客户</a></li>
+		             </ul>
+		           </li>
+		           <li>
+		             <a href="#">服务</a>
+		             <ul>
+		               <li><a href="#">售后</a></li>
+		               <li><a href="#">平台硬件维修</a></li>
+		               <li><a href="#">业务优化</a></li>
+		             </ul>
+		           </li>
+		           <li>
+		             <a href="#">解决方案</a>
+		             <ul>
+		               <li><a href="#">目标分析</a></li>
+		               <li><a href="#">专属定制化方案</a></li>
+		               <li><a href="#">通用方案</a></li>
+		             </ul>
+		           </li>
+		           <li>
+		             <a href="#">关于我们</a>
+		             <ul>
+		               <li><a href="#">公司情况</a></li>
+		               <li><a href="#">成功案例</a></li>
+		               <li><a href="#">合作联系</a></li>
+		             </ul>
+		           </li>
+		         </ul>
+		 </div>	
+			
+		</div>
+	</div> 
+    <header>
+        <div class="header-content">
+            <h2>智科颐养——智慧养老交互系统</h2>
+             <div class="line"></div>
+             <h1>Smart Care - Smart Elderly Care Interactive System</h1> 
+             <a href="#" class="ctn">Learn More Now </a>
+        </div> 
+    </header>
+        <!--内容-->
+        <section class="events">
+            <div class="title">
+                <h1>Project summary</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+             <div div class="col">
+                <img src="./homecss/img/img1.png" alt="">
+                <h4>业务优化</h4>
+                <p>文案1</p>
+                <a href="#" class="ctn">Learn More</a>
+             </div>
+             <div div class="col">
+                <img src="./homecss/img/img2.png" alt="">
+                <h4>目标分析</h4>
+                <p>文案2</p>
+                <a href="#" class="ctn">Learn More</a>
+             </div>
+           </div>
+        </section>
+            <section class="explore">
+                <div class="explore-content">
+                    <h1>Exclusive customized solutions</h1>
+                    <div class="line"></div>
+                    <h2>通用方案</h2>
+                   <a href="#" class="ctn">Learn More</a>
+                </div>
+            </section>
+         <section class="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>After-sales</h1>
+                    <div class="line"></div>
+                    <p>Platform hardware repair </p>
+                    <a href="#" class="ctn">Learn More </a>
+                </div>
+                <div class="col image-col ">
+                    <div class="image-gallery">
+                        <img src="./homecss/img/img3.png" alt=" ">
+                        <img src="./homecss/img/img4.png" alt=" ">
+                        <img src="./homecss/img/img5.png" alt=" ">
+                        <img src="./homecss/img/img6.png" alt=" ">
+                    </div>
+                </div>
+            </div> 
+         </section>    
+       <section class="footer">
+        <p>Copyright &copy; 2023 合肥智科颐养信息技术有限公司.All Rights Reserved</p>
+		  <p>制作人:&nbsp<a href="Person/Person.html">AoWenKang</a></p>
+      <p>最近一次更新时间:2023年4月1日15:31:23</p>
+		  <div class="line"></div>
+       </section>
+    </header>
+    <script>
+        const menuBnt=document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+        menuBnt.addEventListener('click',()=>{ 
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
